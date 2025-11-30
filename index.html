@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Moh Technology</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"></span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-laptop-code me-3"></i>Moh Technology</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="projects.html" class="nav-item nav-link">Projects</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">User</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="login.html" class="dropdown-item">Login</a>
+                        <a href="signup.html" class="dropdown-item">Sign Up</a>
+                        <a href="logout.html" class="dropdown-item">LogOut</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Extras</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="about.html" class="dropdown-item">About</a>
+                        <a href="contact.html" class="dropdown-item">Contact</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.youtube.com/@MohTechnology" target="_blank"
+                class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+                Subscribe</i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative owl-theme" data-autoplay="true" data-loop="true"
+            data-nav="false" data-dots="false">
+            <!-- Slide 1 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="Slide 1">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0,0,0, .6);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Learn Tech with Ease
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown">Master Programming & Development
+                                </h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Join Moh Technology to learn Python, Django,
+                                    GitHub, FastAPI, and more — all explained in Hindi for better understanding.</p>
+                                <a href="#courses"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Explore
+                                    Courses</a>
+                                <a href="https://www.youtube.com/@MohTechnology" target="_blank"
+                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">Subscribe Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="Slide 2">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0,0,0, .6);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">From Beginner to Pro
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown">Build Projects & Real-World Skills
+                                </h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Watch real project tutorials with source code, host
+                                    websites, and build your tech career with Moh Technology.</p>
+                                <a href="#projects"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">View Projects</a>
+                                <a href="https://www.youtube.com/@MohTechnology" target="_blank"
+                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">Watch on YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="Slide 3">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0,0,0, .6);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Freelance Services
+                                </h5>
+                                <h1 class="display-3 text-white animated slideInDown">Hire Us for Web Development</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Need a website or tool? We deliver custom solutions
+                                    in Python, Django, or JavaScript with great UI and backend.</p>
+                                <a href="#packages"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Packages</a>
+                                <a href="#contact" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Contact
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-4.jpg" alt="Slide 4">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(0, 0, 0, 0.6);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">One-Shot Courses</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Fast Learning, Hindi Explanations
+                                </h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Learn full tools like Git, Pygame, or Flet in 1
+                                    video! Perfect for beginners or revision before interviews/exams.</p>
+                                <a href="#courses"
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Browse Courses</a>
+                                <a href="https://www.youtube.com/@MohTechnology"
+                                    class="btn btn-light py-md-3 px-md-5 animated slideInRight">Start Watching</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Service 1: Expert Guidance -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-chalkboard-teacher text-primary mb-4"></i>
+                            <h5 class="mb-3">Expert Guidance</h5>
+                            <p>Learn from real-world developer experience with simplified explanations in Hindi.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2: Online Learning -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                            <h5 class="mb-3">Online Learning</h5>
+                            <p>Watch structured playlists on Python, Django, Git, and more from anywhere, anytime.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3: Hands-On Projects -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-project-diagram text-primary mb-4"></i>
+                            <h5 class="mb-3">Hands-On Projects</h5>
+                            <p>Build and host real projects with complete source code and step-by-step guidance.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4: Free Resources -->
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-file-code text-primary mb-4"></i>
+                            <h5 class="mb-3">Free Resources</h5>
+                            <p>Access notes, source code, and useful tools shared with every video and course.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Image Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.svg"
+                            alt="About Moh Technology" style="object-fit: fit;">
+                    </div>
+                </div>
+                <!-- Text Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to Moh Technology</h1>
+                    <p class="mb-4">Moh Technology is a YouTube channel dedicated to helping students and developers
+                        learn programming and web development in the simplest way possible — all in Hindi.</p>
+                    <p class="mb-4">Whether you're just starting out or want to master frameworks like Django, FastAPI,
+                        or GitHub workflows, we offer real projects, source code, and step-by-step guidance to help you
+                        become job-ready.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Hindi Tutorials</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Project-Based Learning
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Full Source Code Access
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Free & Paid Resources</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Beginner to Advanced</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>100% Practical Content
+                            </p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="https://www.youtube.com/@MohTechnology"
+                        target="_blank">Visit Channel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
+                <h1 class="mb-5">Course Categories by Moh Technology</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="#">
+                                <img class="img-fluid" src="img/cat-1.jpg" alt="Python Programming">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">Python Programming</h5>
+                                    <small class="text-primary">20+ Tutorials</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="#">
+                                <img class="img-fluid" src="img/cat-2.jpg" alt="Django Web Dev">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">Django Web Dev</h5>
+                                    <small class="text-primary">15+ Projects</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="#">
+                                <img class="img-fluid" src="img/cat-3.jpg" alt="FastAPI Crash Course">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">FastAPI Crash Course</h5>
+                                    <small class="text-primary">2000+ Views</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="#">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="Git and GitHub"
+                            style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                            style="margin: 1px;">
+                            <h5 class="m-0">Git & GitHub</h5>
+                            <small class="text-primary">Beginner to Advanced</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories End -->
+
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
+                <h1 class="mb-5">Popular Courses</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Python Course -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-1.jpg" alt="Python Complete Course">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Free</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(500+)</small>
+                            </div>
+                            <h5 class="mb-4">Complete Python Programming</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-user-tie text-primary me-2"></i>Moh Technology</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-clock text-primary me-2"></i>5 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2000
+                                Students</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Django Course -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-2.jpg" alt="Django Full Course">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Free</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(300+)</small>
+                            </div>
+                            <h5 class="mb-4">Django Web Development</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-user-tie text-primary me-2"></i>Moh Technology</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-clock text-primary me-2"></i>4 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1500
+                                Students</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Git & GitHub Course -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/course-3.jpg" alt="Git and GitHub Complete Guide">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 0 0 30px;">Read More</a>
+                                <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3"
+                                    style="border-radius: 0 30px 30px 0;">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Free</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small>(400+)</small>
+                            </div>
+                            <h5 class="mb-4">Git & GitHub Complete Guide</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-user-tie text-primary me-2"></i>Moh Technology</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-clock text-primary me-2"></i>3.5 Hrs</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>1800
+                                Students</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+
+
+    <!-- Packages Start -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h6 class="text-primary">Our Packages</h6>
+            <h2 class="fw-bold">Freelance Software Development</h2>
+            <p class="text-muted">Choose the right solution for your needs. We offer fast, scalable, and modern
+                development.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Starter Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Starter Package</h5>
+                        <p class="card-text">Ideal for personal blogs and small businesses.</p>
+                        <ul class="list-unstyled text-start">
+                            <li>✔️ 3–5 Static Pages</li>
+                            <li>✔️ Responsive Design</li>
+                            <li>✔️ Basic Contact Form</li>
+                            <li>✔️ 5 Days Delivery</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary mt-3">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Startup Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-success">Startup Package</h5>
+                        <p class="card-text">Perfect for launching your startup or service.</p>
+                        <ul class="list-unstyled text-start">
+                            <li>✔️ Up to 8 Dynamic Pages</li>
+                            <li>✔️ Backend (Django/Node)</li>
+                            <li>✔️ Admin Dashboard</li>
+                            <li>✔️ SEO Basic Setup</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success mt-3">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+            <!-- E-Learning Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-info">E-Learning App</h5>
+                        <p class="card-text">Run your own course or quiz platform.</p>
+                        <ul class="list-unstyled text-start">
+                            <li>✔️ Course & Video Management</li>
+                            <li>✔️ Student Login/Signup</li>
+                            <li>✔️ Quiz/Test Module</li>
+                            <li>✔️ Admin Dashboard</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-info mt-3">View Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- E-commerce Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-warning">E-commerce Starter</h5>
+                        <p class="card-text">Sell online with a custom web store.</p>
+                        <ul class="list-unstyled text-start">
+                            <li>✔️ Product Listing & Cart</li>
+                            <li>✔️ Payment Gateway</li>
+                            <li>✔️ Admin Product Panel</li>
+                            <li>✔️ Responsive Layout</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-warning mt-3">Launch Store</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom App Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-danger">Custom Web App</h5>
+                        <p class="card-text">We build what you imagine. Fully tailored apps.</p>
+                        <ul class="list-unstyled text-start">
+                            <li>✔️ Custom Features & Logic</li>
+                            <li>✔️ API Integrations</li>
+                            <li>✔️ Admin Panel + Analytics</li>
+                            <li>✔️ 1:1 Consultation</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-danger mt-3">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Video & Thumbnail Editor Package -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 shadow rounded">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-secondary">Video & Thumbnail Editor</h5>
+                        <p class="card-text">Professional edits for YouTube, reels, or promos.</p>
+                        <ul class="list-unstyled text-start">
+                            <li>✔️ High-quality Video Editing</li>
+                            <li>✔️ Custom YouTube Thumbnails</li>
+                            <li>✔️ Intro & Outro Design</li>
+                            <li>✔️ 2–3 Days Delivery</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-secondary mt-3">Hire Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Packages End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonials</h6>
+                <h1 class="mb-5">What Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/user.jpg"
+                        style="width: 80px; height: 80px;" alt="Student testimonial">
+                    <h5 class="mb-0">Anjali Verma</h5>
+                    <p>Software Developer at Infosys</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">“Moh Technology helped me master Git and GitHub in just one shot! The
+                            explanations were simple yet effective. Highly recommended for beginners and professionals
+                            alike.”</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/user.jpg"
+                        style="width: 80px; height: 80px;" alt="Student testimonial">
+                    <h5 class="mb-0">Rohan Singh</h5>
+                    <p>B.Tech Student, RGPV</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">“The RGPV result automation tutorial saved me hours of manual work. Moh Bhaiya
+                            explains everything so well with practical examples.”</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/user.jpg"
+                        style="width: 80px; height: 80px;" alt="Student testimonial">
+                    <h5 class="mb-0">Sneha Kapoor</h5>
+                    <p>Frontend Developer Intern</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">“I built my first portfolio using the Django + Bootstrap tutorial from this
+                            channel. The step-by-step guidance was awesome!”</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/user.jpg"
+                        style="width: 80px; height: 80px;" alt="Student testimonial">
+                    <h5 class="mb-0">Mohit Chauhan</h5>
+                    <p>Freelance Python Developer</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">“From Flask to FastAPI to Pygame, Moh Technology made it all easy to learn. This
+                            is the best YouTube channel for practical coding tutorials in Hindi.”</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Testimonial Form -->
+             <br>
+            <div class="card p-4 shadow">
+                <h4 class="mb-3 text-center text-primary">Add Your Testimonial</h4>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" placeholder="Your Title (e.g. Student, Developer)"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control" rows="3" placeholder="Your Feedback" required></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary px-4">Submit Testimonial</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">Projects</a>
+                    <a class="btn btn-link" href="">Courses</a>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link"
+                        href="https://www.youtube.com/@Mohtechnology?sub_confirmation=1">Subscribe</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Madhya Pradesh, India</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>mohtechnology123@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.youtube.com/@Mohtechnology?sub_confirmation=1"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="github.com/mohtechnology"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="linkedin.com/in/mohtechnology"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/moh_technology"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Join Our Newsletter</h4>
+                    <p class="text-light">Stay updated with new course releases, project ideas, and free tutorials. No
+                        spam — just pure value!</p>
+                    <form class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5 rounded" type="email"
+                            placeholder="Enter your email" required>
+                        <button type="submit"
+                            class="btn btn-primary py-2 px-4 position-absolute top-0 end-0 mt-2 me-2 rounded">Join</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
